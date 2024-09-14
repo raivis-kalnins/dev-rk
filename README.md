@@ -16,4 +16,4 @@
    Run "yarn run start" and all will be built and ready (package-lock.json and new dir "dist" npm & Laravel Mix https://laravel-mix.com)
     => now you can run wp-admin new Theme and to start development
 
-![Screenshot](/web/app/themes/base_vaks/screenshot.jpg)
+![Screenshot](./web/app/themes/base_vaks/screenshot.jpg)
