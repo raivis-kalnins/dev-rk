@@ -1,8 +1,4 @@
-<p align="center">
-  <a href="https://roots.io/bedrock/">
-    <img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100">
-  </a>
-</p>
+<a href="https://roots.io/bedrock/" target="_blank"><img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100"></a>
 
 - Yarn packages https://yarnpkg.com
 - Working with TFA plugin https://github.com/The-Fuel-Agency/tfa-wp-blocks
