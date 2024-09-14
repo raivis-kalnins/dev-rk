@@ -1,5 +1,6 @@
 <a href="https://roots.io/bedrock/" target="_blank"><img alt="Bedrock" src="https://cdn.roots.io/app/uploads/logo-bedrock.svg" height="100"></a>
 
+- Bedrock WP boilerplate with composer https://roots.io/bedrock/
 - Yarn packages https://yarnpkg.com
 
 1. Before run this theme for new project:
@@ -11,6 +12,8 @@
 
 3. Run "yarn install" - you can add more needed packages https://yarnpkg.com
    Run "yarn run start" and all will be built and ready to start development
+
+- WP Project - Vaks
 
 
 ![Screenshot](./web/app/themes/base_vaks/screenshot.jpg)
