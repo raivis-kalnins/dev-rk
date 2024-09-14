@@ -6,7 +6,7 @@
 
 1. Before run this theme for new project:
     - 1.1 First need to add & run plugin ACF Pro: https://www.advancedcustomfields.com/pro/ & later use https://github.com/StoutLogic/acf-builder
-    - 1.2 Clone https://github.com/The-Fuel-Agency/tfa-base-react
+    - 1.2 Clone https://github.com/raivis-kalnins/dev-rk
 
 3. Run "composer install" - if Win then https://getcomposer.org/download/ - Download and run Composer-Setup.exe (all default setting only need to check any localhost php.ini) 
     - after success instalation and run will be composer.lock & new dir "vendor"
