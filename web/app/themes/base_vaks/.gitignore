@@ -1,0 +1,8 @@
+/node_modules
+/vendor
+.DS_Store
+/dist
+/.vscode
+composer.lock
+.parcel-cache
+theme.json

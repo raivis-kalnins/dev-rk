@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-ExtraBold.eot');
+    src: url('Mulish-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-ExtraBold.woff2') format('woff2'),
+        url('Mulish-ExtraBold.woff') format('woff'),
+        url('Mulish-ExtraBold.ttf') format('truetype'),
+        url('Mulish-ExtraBold.svg#Mulish-ExtraBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: url('Mulish-ExtraBoldItalic.eot');
+    src: url('Mulish-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Mulish-ExtraBoldItalic.woff2') format('woff2'),
+        url('Mulish-ExtraBoldItalic.woff') format('woff'),
+        url('Mulish-ExtraBoldItalic.ttf') format('truetype'),
+        url('Mulish-ExtraBoldItalic.svg#Mulish-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

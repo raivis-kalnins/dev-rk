@@ -1,0 +1,23 @@
+{
+    "name": "caballero/caballero",
+    "description": "The starting point base theme for Caballero Wordpress projects",
+    "type": "wordpress-theme",
+    "authors": [{
+        "name": "Raivis Kalnins",
+        "email": "raivis@63.lv"
+    }],
+    "require": {
+        "stoutlogic/acf-builder": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "TFA\\": "inc/"
+        },
+        "files": ["inc/acf.php"]
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

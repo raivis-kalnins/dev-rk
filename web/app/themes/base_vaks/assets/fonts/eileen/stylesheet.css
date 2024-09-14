@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Eileen';
+    src: url('Eileen-Regular.eot');
+    src: url('Eileen-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Eileen-Regular.woff2') format('woff2'),
+        url('Eileen-Regular.woff') format('woff'),
+        url('Eileen-Regular.ttf') format('truetype'),
+        url('Eileen-Regular.svg#Eileen-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eileen';
+    src: url('Eileen-Bold.eot');
+    src: url('Eileen-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Eileen-Bold.woff2') format('woff2'),
+        url('Eileen-Bold.woff') format('woff'),
+        url('Eileen-Bold.ttf') format('truetype'),
+        url('Eileen-Bold.svg#Eileen-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eileen';
+    src: url('Eileen-Medium.eot');
+    src: url('Eileen-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Eileen-Medium.woff2') format('woff2'),
+        url('Eileen-Medium.woff') format('woff'),
+        url('Eileen-Medium.ttf') format('truetype'),
+        url('Eileen-Medium.svg#Eileen-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
