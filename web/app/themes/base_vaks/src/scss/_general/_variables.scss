@@ -20,3 +20,56 @@ $red: #FF0000;
 	--theme-color-black: #{$black};
     --theme-color-red: #{$red};
 }
+
+// Font weight
+$thin: 100;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+
+// Font - Sizes
+$font-sizes: (
+	'body': 16px,
+	'btn': 16px,
+	'h1': 68px,
+	'h1Tab': 68px,
+	'h1Mob': 36px,
+	'h2L': 56px,
+	'h2LMob': 32px,
+	'h2': 48px,
+	'h2Tab': 38px,
+	'h2Mob': 24px,
+	'h3': 32px,
+	'h3Tab': 18px,
+	'h3Mob': 22px,
+	'h4': 20px,
+	'h4Mob': 20px,
+	'h5': 18px,
+	'h5Mob': 18px,
+	'h6': 17px
+);
+
+$body: map-get($font-sizes, body);
+$btn: map-get($font-sizes, btn1);
+$h1: map-get($font-sizes, h1);
+$h1Tab: map-get($font-sizes, h1Tab);
+$h1Mob: map-get($font-sizes, h1Mob);
+$h2L: map-get($font-sizes, h2L);
+$h2LMob: map-get($font-sizes, h2LMob);
+$h2: map-get($font-sizes, h2);
+$h2Tab: map-get($font-sizes, h2Tab);
+$h2Mob: map-get($font-sizes, h2Mob);
+$h3: map-get($font-sizes, h3);
+$h3Tab: map-get($font-sizes, h3Tab);
+$h3Mob: map-get($font-sizes, h3Mob);
+$h4: map-get($font-sizes, h4);
+$h4Mob: map-get($font-sizes, h4Mob);
+$h5: map-get($font-sizes, h5);
+$h5Mob: map-get($font-sizes, h5Mob);
+$h6: map-get($font-sizes, h6);
+
+$container-margin: calc( -15px - ( ( 100vw - 1400px ) / 2 ) );
+$container-margin-left: calc( 15px + ( ( 100vw - 1400px ) / 2 ) );

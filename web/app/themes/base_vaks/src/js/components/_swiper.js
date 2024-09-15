@@ -1,3 +1,5 @@
+var hero_slider, related;
+
 hero_slider = new Swiper('.hero-slider', {
 	updateOnWindowResize: true,
 	centeredSlides: true,
@@ -26,7 +28,7 @@ hero_slider = new Swiper('.hero-slider', {
 });
 
 // Related pages & posts
-swiper = new Swiper('.related-pages.swiper-slider, .related-posts.swiper-slider', {
+related = new Swiper('.related-pages.swiper-slider, .related-posts.swiper-slider', {
 	observeSlideChildren: true,
 	slideToClickedSlide: true,
 	updateOnWindowResize: true,

@@ -1,20 +1,24 @@
-setTimeout(function() {
-	$('.acf-form-sent').text('');
-	if ( $('.acf-form-sent').hasClass('acf-form-sent') ) {
-		history.replaceState(null, null, ' ');
-	}
-}, 2000);
+document.addEventListener("DOMContentLoaded", function() {
 
-var $ = jQuery.noConflict();
+	const 	$ = jQuery.noConflict();
 
-/* Phone / Numbers & + only Validation */
-$('form input[type=tel],input[type=number],form input[type=range],form input[type=time]').on('input propertychange', function (e) {
-	e.target.value = e.target.value.replace(/[a-zA-Z]/g,'');
-	return false;
-});
+	setTimeout(function() {
+		$('.acf-form-sent').text('');
+		if ( $('.acf-form-sent').hasClass('acf-form-sent') ) {
+			history.replaceState(null, null, ' ');
+		}
+	}, 2000);
 
-/* Name / Text only Validation */
-$('form input[type=text]').on('input propertychange', function (e) {
-	e.target.value = e.target.value.replace(/[0-9]/g,'');
-	return false;
+	/* Phone / Numbers & + only Validation */
+	$('form input[type=tel],input[type=number],form input[type=range],form input[type=time]').on('input propertychange', function (e) {
+		e.target.value = e.target.value.replace(/[a-zA-Z]/g,'');
+		return false;
+	});
+
+	/* Name / Text only Validation */
+	$('form input[type=text]').on('input propertychange', function (e) {
+		e.target.value = e.target.value.replace(/[0-9]/g,'');
+		return false;
+	});
+
 });
