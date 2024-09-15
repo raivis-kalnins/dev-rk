@@ -1,3 +1,8 @@
+:root :where(.is-layout-flow) > *,
+:root :where(.is-layout-constrained) > * {
+    margin-block-start: 0;
+}
+
 .container {
     max-width: unset;
     margin: 0 auto;
@@ -15,6 +20,24 @@
 			max-width: calc(100vw - 40px);
 		}
     }
+
+	p:empty {
+		margin: 0;
+	}
+
+	svg {
+		width: fit-content;
+		height: auto;
+	}
+}
+
+.d-none,
+.hidden {
+	display: none !important;
+}
+
+.float-left {
+	float: left !important;
 }
 
 .post-edit-link {

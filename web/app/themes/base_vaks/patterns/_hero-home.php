@@ -28,10 +28,11 @@ if ( !empty($hero_desc) ) {
 ?>
 <!-- wp:group {"className":"hero hero-default"} -->
 <div class="wp-block-group hero hero-default">
-	<!-- wp:group {"className":"container-boxed hero-wrap","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group container-boxed hero-wrap">
-		<?=$hero_t?><?=$hero_d?><?=$hero_b?>
-	</div>
+	<!-- wp:group {"className":"container-boxed hero-wrap"} -->
+	<div class="wp-block-group container-boxed hero-wrap"><?=$hero_t?></div>
+	<!-- /wp:group -->
+	 <!-- wp:group {"className":"container-boxed hero-wrap_desc","layout":{"type":"constrained"}} -->
+	<div class="wp-block-group container-boxed hero-wrap_desc"><?=$hero_d?><?=$hero_b?></div>
 	<!-- /wp:group -->
 </div>
 <!-- /wp:group -->

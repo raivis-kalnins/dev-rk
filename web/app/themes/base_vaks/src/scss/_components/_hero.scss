@@ -1,0 +1,38 @@
+.hero {	
+	display: inline-block;
+	width: 100%;
+
+	&-wrap {
+		background-position: right center !important;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		max-height: fit-content;
+		align-self: center;
+		text-align: left;
+		display: block;
+		height: 300px;
+		width: 100%;
+		z-index: 1;
+
+		& > * {
+			position: relative;
+			z-index: 1;
+		}
+
+		h1 {
+			margin-bottom: 0;
+			color: $white;
+		}
+
+		&_desc {
+
+			p {
+				max-width: 670px;
+			}
+
+			.btn {
+				margin-top: 30px;
+			}
+		}
+	}
+}
