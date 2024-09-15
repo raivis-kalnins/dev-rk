@@ -1,0 +1,19 @@
+footer {
+    background-color: rgba($black-light_solid,0.1);
+
+    .foo {
+        
+        &__copy {
+            font-size: $small;
+
+            em {
+                font-style: normal;
+            }
+
+            .wp-block-image {
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

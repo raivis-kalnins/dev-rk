@@ -9,8 +9,6 @@ $heading-font: 'Eileen Bold', sans-serif;
 $body-font: 'Mulish Regular', sans-serif;
 
 // Brand colours
-
-
 $white: #FBFBFB;
 
 $black: #161B14;
@@ -19,6 +17,26 @@ $black-light: #7A7D79;
 $black-light--70: rgba($black-light,0.7);
 $black-light--20: rgba($black-light,0.2);
 $black-light_solid: #7A7D79;
+$black-light_solid--50: rgba($black-light_solid,05);
+
+$primary: #F8A800;
+$primary-shade: #B27900;
+$primary-dark: #7D5400;
+$primary-light: #FFC54D;
+$primary-light--50: rgba($primary-light,0.5);
+$primary-light--20: rgba($primary-light,0.2);
+
+$secondary: #4E9D2D;
+$secondary-shade: #31631C;
+$secondary-light: #82D260;
+$secondary-light--50: rgba($secondary-light,0.5);
+$secondary-light--20: rgba($secondary-light,0.2);
+
+$complamentary: #007DBA;
+$complamentary-shade: #004566;
+$complamentary-light: #0AAFFF;
+$complamentary-light--50: rgba($complamentary-light,0.5);
+$complamentary-light--20: rgba($complamentary-light,0.2);
 
 $accent-error: #ED4510;
 $accent-attention: #FFCE20;
@@ -27,9 +45,9 @@ $gradient: linear-gradient(120deg, rgb(6, 45, 185) 0%, rgb(5, 99, 212) 47.4%, rg
 $bg-color: $white;
 
 :root {
-	--theme-color-white: #{$white};
-	--theme-color-black: #{$black};
-    --theme-color-accent-error: #{$accent-error};
+	--theme-white: #{$white};
+	--theme-black: #{$black};
+    --theme-accent-error: #{$accent-error};
 }
 
 // Font weight
@@ -44,27 +62,30 @@ $extrabold: 800;
 // Font - Sizes
 $font-sizes: (
 	'body': 16px,
+	'large': 20px,
+	'small': 14px,
 	'micro': 11px,
 	'btn': 16px,
 	'h1': 60px,
 	'h1Tab': 60px,
-	'h1Mob': 36px,
+	'h1Mob': 35px,
 	'h2': 45px,
 	'h2Tab': 45px,
-	'h2Mob': 24px,
-	'h3': 32px,
-	'h3Tab': 18px,
-	'h3Mob': 22px,
-	'h4': 20px,
+	'h2Mob': 30px,
+	'h3': 35px,
+	'h3Tab': 35px,
+	'h3Mob': 25px,
+	'h4': 25px,
 	'h4Mob': 20px,
-	'h5': 18px,
-	'h5Mob': 18px,
-	'h6': 17px
+	'h5': 20px,
+	'h6': 18px
 );
 
 $body: map-get($font-sizes, body);
+$large: map-get($font-sizes, large);
+$small: map-get($font-sizes, small);
 $micro: map-get($font-sizes, micro);
-$btn: map-get($font-sizes, btn1);
+$btn: map-get($font-sizes, btn);
 $h1: map-get($font-sizes, h1);
 $h1Tab: map-get($font-sizes, h1Tab);
 $h1Mob: map-get($font-sizes, h1Mob);
@@ -77,7 +98,6 @@ $h3Mob: map-get($font-sizes, h3Mob);
 $h4: map-get($font-sizes, h4);
 $h4Mob: map-get($font-sizes, h4Mob);
 $h5: map-get($font-sizes, h5);
-$h5Mob: map-get($font-sizes, h5Mob);
 $h6: map-get($font-sizes, h6);
 
 $container-margin: calc( -15px - ( ( 100vw - 1400px ) / 2 ) );
