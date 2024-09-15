@@ -18,10 +18,10 @@
 				background-color: #999;
 				@include h3-styling;
 				position: relative;
-				border-radius: 5px;				
-				height: 254px;
+				border-radius: 5px;
 				display: flex;
-				padding: 40px;
+				padding: 40px;			
+				height: 254px;
 
 				@include resp-max('l') {
 					width: calc(50% - 20px);

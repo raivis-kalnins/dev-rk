@@ -9,17 +9,27 @@ $heading-font: 'Eileen Bold', sans-serif;
 $body-font: 'Mulish Regular', sans-serif;
 
 // Brand colours
-$gradient: linear-gradient(120deg, rgb(6, 45, 185) 0%, rgb(5, 99, 212) 47.4%, rgb(20, 168, 232) 100%);
+
 
 $white: #FBFBFB;
+
 $black: #161B14;
 $black-shade: #4E524D;
-$red: #FF0000;
+$black-light: #7A7D79;
+$black-light--70: rgba($black-light,0.7);
+$black-light--20: rgba($black-light,0.2);
+$black-light_solid: #7A7D79;
+
+$accent-error: #ED4510;
+$accent-attention: #FFCE20;
+
+$gradient: linear-gradient(120deg, rgb(6, 45, 185) 0%, rgb(5, 99, 212) 47.4%, rgb(20, 168, 232) 100%);
+$bg-color: $white;
 
 :root {
 	--theme-color-white: #{$white};
 	--theme-color-black: #{$black};
-    --theme-color-red: #{$red};
+    --theme-color-accent-error: #{$accent-error};
 }
 
 // Font weight
