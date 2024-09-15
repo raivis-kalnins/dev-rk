@@ -1,0 +1,18 @@
+.container {
+    max-width: unset;
+    margin: 0 auto;
+    width: 100%;
+    
+    &-boxed {
+        max-width: $container-width;
+        margin: 0 auto;
+
+        @include resp-max('l') {
+			max-width: calc(100vw - 80px);
+		}
+
+		@include resp-max('s') {
+			max-width: calc(100vw - 40px);
+		}
+    }
+}

@@ -21,7 +21,7 @@ if ( !empty($hero_btn) ) {
 }
 $hero_desc = $h['hero_desc'] ?? '';
 if ( !empty($hero_desc) ) {
-	$hero_d = '<!-- wp:tfa/post-acf-field {"fieldName":"hero_desc"} /-->'; 
+	$hero_d = '<!-- wp:caballero/post-acf-field {"fieldName":"hero_desc"} /-->'; 
 } else { 
 	$hero_d = '';
 }
@@ -30,7 +30,7 @@ if ( !empty($hero_desc) ) {
 <section class="wp-block-group hero hero-default">
 	<!-- wp:group {"className":"container-boxed hero-wrap"} -->
 	<div class="wp-block-group container-boxed hero-wrap">
-		<!-- wp:tfa/post-acf-field {"fieldName":"hero_section"} /--><?php echo $hero_t.''.$hero_d.''.$hero_b ?></div>
+		<!-- wp:caballero/post-acf-field {"fieldName":"hero_section"} /--><?php echo $hero_t.''.$hero_d.''.$hero_b ?></div>
 	<!-- /wp:group -->
 </section>
 <!-- /wp:group -->
