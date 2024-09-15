@@ -3,9 +3,13 @@ header {
 	.header {
 		
 		&-wrap {
-			padding: 20px 0;
 
 			&_top {
+				padding: 20px 0;
+			}
+
+			&_nav {
+				padding: 20px 0;
 
 				.wp-block-site-logo {
 
@@ -13,12 +17,9 @@ header {
 						width: 74px !important;
 					}
 				}
-			}
-
-			&_nav {
 				
 				nav {
-					
+
 				}
 			}
 		}
