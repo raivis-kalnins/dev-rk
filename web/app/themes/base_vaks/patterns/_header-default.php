@@ -11,6 +11,11 @@
 	<!-- wp:group {"style":{"spacing":{"blockGap":"20px"}},"layout":{"type":"flex","flexWrap":"nowrap"},"className":"container-boxed header-wrap_top"} -->
 	<div class="wp-block-group container-boxed header-wrap_top">		
 		<!-- wp:woocommerce/customer-account {"displayStyle":"icon_only","iconStyle":"line","iconClass":"wc-block-customer-account__account-icon","style":{"spacing":{"padding":{"right":"0","left":"0"}}}} /-->
+		 <!-- wp:list -->
+		<ul class="wp-block-list">
+			<?php pll_the_languages( array( 'show_flags' => 1,'show_names' => 0, 'current_lang' => 1 ) ); ?>
+		</ul>
+		<!-- /wp:list -->
 		
 		<!-- wp:woocommerce/mini-cart /-->
 	</div>

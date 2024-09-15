@@ -6,6 +6,10 @@ header {
 
 			&_top {
 				padding: 20px 0;
+
+				.pll-switcher-select {
+					position: relative;
+				}
 			}
 
 			&_nav {
