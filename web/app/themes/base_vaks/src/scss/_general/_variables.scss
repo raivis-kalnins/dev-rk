@@ -1,12 +1,12 @@
-@import url('//fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('//fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
-//@import '../../assets/fonts/avenir/stylesheet.css';
+//@import url('//fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+//@import url('//fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
 //@import url('//use.typekit.net/avz2fcq.css'); // Termina & Azos
+@import '../../assets/fonts/eileen/stylesheet.css';
+@import '../../assets/fonts/Mulish/stylesheet.css';
 
 // Font - Families
-$heading-font: 'Outfit', sans-serif;
-$body-font: 'IBM Plex Sans', sans-serif;
-//$body-font: 'Outfit', sans-serif;
+$heading-font: 'Eileen Bold', sans-serif;
+$body-font: 'Mulish Regular', sans-serif;
 
 // Brand colours
 $gradient: linear-gradient(120deg, rgb(6, 45, 185) 0%, rgb(5, 99, 212) 47.4%, rgb(20, 168, 232) 100%);
@@ -33,14 +33,13 @@ $extrabold: 800;
 // Font - Sizes
 $font-sizes: (
 	'body': 16px,
+	'micro': 11px,
 	'btn': 16px,
-	'h1': 68px,
-	'h1Tab': 68px,
+	'h1': 60px,
+	'h1Tab': 60px,
 	'h1Mob': 36px,
-	'h2L': 56px,
-	'h2LMob': 32px,
-	'h2': 48px,
-	'h2Tab': 38px,
+	'h2': 45px,
+	'h2Tab': 45px,
 	'h2Mob': 24px,
 	'h3': 32px,
 	'h3Tab': 18px,
@@ -53,12 +52,11 @@ $font-sizes: (
 );
 
 $body: map-get($font-sizes, body);
+$micro: map-get($font-sizes, micro);
 $btn: map-get($font-sizes, btn1);
 $h1: map-get($font-sizes, h1);
 $h1Tab: map-get($font-sizes, h1Tab);
 $h1Mob: map-get($font-sizes, h1Mob);
-$h2L: map-get($font-sizes, h2L);
-$h2LMob: map-get($font-sizes, h2LMob);
 $h2: map-get($font-sizes, h2);
 $h2Tab: map-get($font-sizes, h2Tab);
 $h2Mob: map-get($font-sizes, h2Mob);

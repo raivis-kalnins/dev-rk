@@ -1,0 +1,26 @@
+header {
+
+	.header {
+		
+		&-wrap {
+			padding: 20px 0;
+
+			&_top {
+
+				.wp-block-site-logo {
+
+					img {
+						width: 74px !important;
+					}
+				}
+			}
+
+			&_nav {
+				
+				nav {
+					
+				}
+			}
+		}
+	}
+}

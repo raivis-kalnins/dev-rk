@@ -1,5 +1,6 @@
 body {
 	font-family: $body-font;
+	font-weight: $regular;
 	font-size: $body;
 }
 
@@ -16,7 +17,7 @@ h6 {
 
 	@include fontRemSize($h1);
 	text-transform: none;
-	font-weight: $regular;
+	font-weight: $bold;
 	margin-bottom: 30px;
 	line-height: 1.2;
 	letter-spacing: 0;
@@ -38,28 +39,10 @@ h1,
 	@include h1-styling;
 }
 
-@mixin h2-large-styling {
-	@include fontRemSize($h2L);
-	letter-spacing: 0;
-	font-weight: $medium;
-	line-height: 78px;
-	margin-bottom: 30px;
-
-	@include resp-max('l') {
-		@include fontRemSize($h2LMob);
-		letter-spacing: 0;
-		line-height: 45px;
-	}
-}
-
-.h2-large {
-	@include h2-large-styling;
-}
-
 @mixin h2-styling {
 
 	@include fontRemSize($h2);
-	text-transform: uppercase;
+	text-transform: none;
 	font-weight: $medium;
 	margin-bottom: 30px;
 	position: relative;
@@ -153,9 +136,9 @@ p,
 span {
 	@include fontRemSize($body);
 	font-family: $body-font;
-	font-weight: $light;
-	letter-spacing: 0;
-	
+	font-weight: $regular;
+	letter-spacing: 0.2px;
+	line-height: 1.7;
 
 	a {
 		text-decoration: underline;

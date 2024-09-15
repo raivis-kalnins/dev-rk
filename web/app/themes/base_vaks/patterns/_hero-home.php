@@ -5,6 +5,7 @@
  * Categories: caballero-patterns-main
  * Keywords: Home Hero
  */
+$wpseo_breadcrumb = do_shortcode('[wpseo_breadcrumb]');
 $h = get_fields() ?? '';
 $hero_h1 = $h['hero_title'] ?? '';
 $hero_h1 = $h['hero_title'] ?? '';
@@ -28,6 +29,7 @@ if ( !empty($hero_desc) ) {
 ?>
 <!-- wp:group {"className":"hero hero-default"} -->
 <div class="wp-block-group hero hero-default">
+	<!-- wp:group {"className":"breadcrumb-wrap container-boxed","layout":{"type":"constrained"}} --><div class="wp-block-group breadcrumb-wrap container-boxed"><?=$wpseo_breadcrumb?></div><!-- /wp:group -->
 	<!-- wp:group {"className":"container-boxed hero-wrap"} -->
 	<div class="wp-block-group container-boxed hero-wrap"><?=$hero_t?></div>
 	<!-- /wp:group -->
