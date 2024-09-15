@@ -27,10 +27,9 @@
       "punycode": "^2.1.1"
     },
     "source": [
-      "src/scss/tfa-theme-admin.scss",
-      "src/scss/tfa-theme-main.scss",
-      "src/js/tfa-theme-admin.js",
-      "src/js/tfa-theme-main.js"
+      "src/scss/admin.scss",
+      "src/scss/main.scss",
+      "src/js/app.js"
     ],
     "targets": {
       "default": {

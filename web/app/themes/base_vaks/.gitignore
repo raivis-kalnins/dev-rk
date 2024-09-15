@@ -6,3 +6,4 @@
 composer.lock
 .parcel-cache
 theme.json
+yarn.lock
