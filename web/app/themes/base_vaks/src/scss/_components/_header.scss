@@ -27,8 +27,13 @@ header {
 						width: 74px !important;
 					}
 				}
+
+				nav {
+					width: 100%;
+				}
 				
 				.wp-block-navigation__container {
+					justify-content: flex-end;
 					margin-top: 5px;
 					width: 100%;
 
@@ -38,12 +43,17 @@ header {
 						&:nth-child(2),
 						&:nth-child(3),
 						&:nth-child(4) {
+							flex: auto;
 
 							a, span {
 								font-family: $body-font-extrabold !important;
 								text-transform: uppercase;
 								font-weight: $bold;								
-							}							
+							}						
+						}
+
+						&:nth-child(4) {
+							margin-right: 400px;
 						}
 					}
 				}
