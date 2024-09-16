@@ -7,6 +7,7 @@
 // Font - Families
 $heading-font: 'Eileen Bold', sans-serif;
 $body-font: 'Mulish Regular', sans-serif;
+$body-font-extrabold:  'Mulish ExtraBold', sans-serif;
 
 // Brand colours
 $white: #FBFBFB;
@@ -47,7 +48,30 @@ $bg-color: $white;
 :root {
 	--theme-white: #{$white};
 	--theme-black: #{$black};
-    --theme-accent-error: #{$accent-error};
+	--theme-black-shade: #{$black-shade};
+	--theme-black-light: #{$black-light};
+	--theme-black-light--70: #{$black-light--70};
+	--theme-black-light--20: #{$black-light--20};
+	--theme-black-light_solid: #{$black-light_solid};
+	--theme-black-light_solid--50: #{$black-light_solid--50};
+	--theme-primary: #{$primary};
+	--theme-primary: #{$primary-shade};
+	--theme-primary: #{$primary-dark};
+	--theme-primary: #{$primary-light};
+	--theme-primary: #{$primary-light--50};
+	--theme-primary: #{$primary-light--20};
+	--theme-secondary: #{$secondary};
+	--theme-secondary-shade: #{$secondary-shade};
+	--theme-secondary-light: #{$secondary-light};
+	--theme-secondary-light--50: #{$secondary-light--50};
+	--theme-secondary-light--20: #{$secondary-light--20};
+	--theme-complamentary: #{$complamentary};
+	--theme-complamentary-shade: #{$complamentary-shade};
+	--theme-complamentary-light: #{$complamentary-light};
+	--theme-complamentary-light--50: #{$complamentary-light--50};
+	--theme-complamentary-light--20: #{$complamentary-light--20};
+	--theme-accent-error: #{$accent-error};
+	--theme-accent-attention: #{$accent-attention};
 }
 
 // Font weight

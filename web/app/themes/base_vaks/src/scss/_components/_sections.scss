@@ -1,3 +1,14 @@
+:root {
+	--bg-kviesi: url('/assets/img/svg/bg-kviesi.svg');
+	--bg-rudzi: url('/assets/img/svg/bg-rudzi.svg');
+	--bg-miezi: url('/assets/img/svg/bg-miezi.svg');
+	--bg-rapsi: url('/assets/img/svg/bg-rapsi.svg');
+	--bg-tritikali: url('/assets/img/svg/bg-tritikali.svg');
+	--bg-pupas: url('/assets/img/svg/bg-pupas.svg');
+	--bg-auzas: url('/assets/img/svg/bg-auzas.svg');
+	--bg-griki: url('/assets/img/svg/bg-griki.svg');
+}
+
 .section {
 
 	&__kulturas {
@@ -14,8 +25,9 @@
 			gap: 5px 20px;
 
 			li {
+				background: $primary-light--20 var(--bg-kviesi) 75% bottom / auto 80px no-repeat;
+				font-family: $heading-font;
 				width: calc(25% - 20px);
-				background-color: #999;
 				@include h3-styling;
 				position: relative;
 				border-radius: 5px;
@@ -24,11 +36,11 @@
 				height: 254px;
 
 				@include resp-max('l') {
-					width: calc(50% - 20px);
+					width: calc(50% - 10px);
 				}
 
 				@include resp-max('s') {
-					width: calc(100% - 20px);
+					width: 100%;
 				}
 
 				&::after {
@@ -36,28 +48,37 @@
 					position: absolute;
 				}
 
-				&:nth-child(1) {
-
-				}
-
 				&:nth-child(2) {
-
+					background-color: $secondary-light--20;
+					background-image: var(--bg-rudzi);					
 				}
 
 				&:nth-child(3) {
-
+					background-image: var(--bg-miezi);
+					background-color: $secondary-light--20;
 				}
 
 				&:nth-child(4) {
-
+					background-image: var(--bg-rapsi);
 				}
 
 				&:nth-child(5) {
-
+					background-color: $secondary-light--20;
+					background-image: var(--bg-tritikali);					
 				}
 
 				&:nth-child(6) {
+					background-color: $secondary-light--20;
+					background-image: var(--bg-pupas);					
+				}
 
+				&:nth-child(7) {
+					background-image: var(--bg-auzas);
+				}
+
+				&:nth-child(8) {					
+					background-color: $secondary-light--20;
+					background-image: var(--bg-griki);
 				}
 			}
 		}

@@ -5,15 +5,21 @@ header {
 		&-wrap {
 
 			&_top {
+				justify-content: flex-end;
 				padding: 20px 0;
+				width: 100%;
+				
+				& > * {
+					float: right;
+				}
 
-				.pll-switcher-select {
-					position: relative;
+				.wp-block-list {
+					list-style: none;
 				}
 			}
 
 			&_nav {
-				padding: 20px 0;
+				padding: 0 0 20px 0;
 
 				.wp-block-site-logo {
 
@@ -22,8 +28,24 @@ header {
 					}
 				}
 				
-				nav {
+				.wp-block-navigation__container {
+					margin-top: 5px;
+					width: 100%;
 
+					.wp-block-navigation-item {
+
+						&:nth-child(1),
+						&:nth-child(2),
+						&:nth-child(3),
+						&:nth-child(4) {
+
+							a, span {
+								font-family: $body-font-extrabold !important;
+								text-transform: uppercase;
+								font-weight: $bold;								
+							}							
+						}
+					}
 				}
 			}
 		}

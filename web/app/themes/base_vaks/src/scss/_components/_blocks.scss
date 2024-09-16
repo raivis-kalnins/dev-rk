@@ -1,0 +1,86 @@
+.wp-block {
+
+	&-image {
+
+		&.aligncenter {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	&-social-links {
+		margin-bottom: 0 !important;
+		position: relative;
+		bottom: -6px;
+
+		.wp-social-link {
+			border: transparent solid 2px;
+			background-color: transparent;
+			margin-right: 10px;
+			border-radius: 0;
+			padding-left: 0;
+			display: block;
+			width: 20px;
+			height: 20px;
+
+			a {
+				width: fit-content;
+				height: 20px;
+
+				&::after {
+					display: none !important;
+				}
+			}
+
+			&::before {
+				content: unset;
+			}
+
+			&.wp-social-link-twitter {
+
+				a {
+
+					svg {
+						width: 1em;
+						height: 1em;
+					}
+				}
+			}
+		}
+	}
+
+	&-bssb-social-share {
+		
+		ul.bssbSocialShare {
+			
+			li.icon {
+				margin: 0 auto !important;
+
+				&::before {
+					content: unset;
+				}
+
+				&.icon[data-social="facebook"] {
+					width: calc( 24px + 1px + 10px ) !important;
+					margin-right: -15px !important;
+					padding-left: 0;    				
+				}
+
+				i {
+					font-size: 24px !important;
+					position: relative;
+					display: block;
+					height: 24px;
+					width: 24px;
+				}
+
+				&:hover {
+
+					i {
+						scale: 1.1;
+					}
+				}
+			}
+		}
+	}
+}
