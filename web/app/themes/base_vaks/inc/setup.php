@@ -108,3 +108,15 @@ add_filter( 'edit_post_link', function( $link, $post_id, $text ) {
 		$link = str_replace( '<a ', '<a target="_blank" ', $link );
 	return $link;
 }, 10, 3 );
+
+/**
+ * Register Caballero Default Menus
+ */
+function caballero_menus() {
+	$locations = array(
+		'caballero-header-menu'   => __( 'Header Menu', 'caballero' ),
+		'caballero-footer-menu'  => __( 'Footer Menu', 'caballero' ),
+	);
+	register_nav_menus( $locations );
+}
+add_action( 'init', 'caballero_menus' );

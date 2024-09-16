@@ -11,7 +11,7 @@
     },
     "autoload": {
         "psr-4": {
-            "TFA\\": "inc/"
+            "CABALLERO\\": "inc/"
         },
         "files": ["inc/acf.php"]
     },
