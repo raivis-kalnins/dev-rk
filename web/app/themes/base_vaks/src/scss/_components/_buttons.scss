@@ -74,3 +74,17 @@
 		text-decoration: none;
 	}
 }
+
+.swiper-nav {
+	position: relative;
+	display: block;			
+	z-index: 2;
+
+	.wp-block-image {
+		align-items: flex-end;
+
+		img {
+			cursor: pointer;
+		}
+	}
+}

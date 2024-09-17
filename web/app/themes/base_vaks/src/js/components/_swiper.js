@@ -1,4 +1,4 @@
-var hero_slider, related;
+var hero_slider, related, partners_slider;
 
 hero_slider = new Swiper('.hero-slider', {
 	updateOnWindowResize: true,
@@ -58,6 +58,29 @@ related = new Swiper('.related-pages.swiper-slider, .related-posts.swiper-slider
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
+	},
+	grabCursor: true
+});
+
+partners_slider = new Swiper('.section__partners', {
+	updateOnWindowResize: true,
+	centeredSlides: true,
+	slidesPerColumnFill: 'row',
+	slidesPerView: 5.9,
+	spaceBetween: 0,
+	loop: true,
+	speed: 2000,
+	autoplay: {
+		delay: 7000,
+		disableOnInteraction: false,
+	},
+	keyboard: {
+		enabled: true,
+		onlyInViewport: false,
+	},
+	navigation: {
+		prevEl: '.wp-image-197',
+		nextEl: '.wp-image-198'
 	},
 	grabCursor: true
 });
