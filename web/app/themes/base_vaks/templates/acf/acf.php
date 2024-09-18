@@ -11,7 +11,8 @@
 		foreach( $flex_layouts as $layout ):
 
 			// Fexible item variables
-			$cards = $layout['cards'] ?? '';
+			//$cards = $layout['cards'] ?? '';
+			$products = $layout['products'] ?? '';
 			$related_posts = $layout['related-posts']['relationship_field_posts'] ?? '';
 			$related_pages = $layout['related-pages']['relationship_field_pages'] ?? '';
 			$accordion = $layout['accordion'] ?? '';

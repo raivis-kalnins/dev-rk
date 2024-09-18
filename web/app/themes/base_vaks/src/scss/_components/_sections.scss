@@ -11,7 +11,7 @@
 
 .section {
 
-	&__kulturas {
+	&__products {
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: 100% auto;
@@ -41,44 +41,6 @@
 
 				@include resp-max('s') {
 					width: 100%;
-				}
-
-				&::after {
-					content:'';
-					position: absolute;
-				}
-
-				&:nth-child(2) {
-					background-color: $secondary-light--20;
-					background-image: var(--bg-rudzi);					
-				}
-
-				&:nth-child(3) {
-					background-color: $complamentary-light--20;
-					background-image: var(--bg-miezi);					
-				}
-
-				&:nth-child(4) {
-					background-image: var(--bg-rapsi);
-				}
-
-				&:nth-child(5) {
-					background-color: $secondary-light--20;
-					background-image: var(--bg-tritikali);					
-				}
-
-				&:nth-child(6) {
-					background-color: $complamentary-light--20;
-					background-image: var(--bg-pupas);					
-				}
-
-				&:nth-child(7) {
-					background-image: var(--bg-auzas);
-				}
-
-				&:nth-child(8) {					
-					background-color: $secondary-light--20;
-					background-image: var(--bg-griki);
 				}
 			}
 		}

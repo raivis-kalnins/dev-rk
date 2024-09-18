@@ -22,6 +22,14 @@ $options_builder
 	->addUrl('soc_tw', ['layout' => 'block', 'label' => 'Twitter', 'default_value' => 'https://twitter.com', 'wrapper' => ['width' => 20]])
 	->addUrl('soc_yt', ['layout' => 'block', 'label' => 'Youtube', 'default_value' => 'https://youtube.com', 'wrapper' => ['width' => 20]])
 
+	// Locations Google Maps
+	->addTab('Locations', ['label' => 'Map Locations'])
+	->addRepeater('locations', ['layout' => 'table', 'label' => 'Locations','wrapper' => ['width' => 100]])
+		->addGoogleMap('location', ['label' => 'Location','center_lat' => '','center_lng' => '','zoom' => '','height' => '400','layout' => 'block', 'wrapper' => ['width' => 40]])
+		->addWysiwyg('location_desc', ['label' => 'Description','layout' => 'block', 'wrapper' => ['width' => 40]])
+		->addImage('location_marker', ['return_format' => 'id', 'wrapper' => ['width' => 20], 'label' => 'Image'])	
+	->endRepeater()
+
 	// Languages
 	// ->addTab('Languages', ['placement' => 'left','wrapper' => ['width' => 5]])
 	// ->addTrueFalse('language_flags', ['label' => 'Show Flags','required' => 0,'default_value' => 1,'ui' => 1])

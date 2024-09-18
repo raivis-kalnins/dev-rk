@@ -5,6 +5,26 @@ $builder = new FieldsBuilder( 'flex-layouts' );
 $builder
 	->addFlexibleContent('flex_layouts', ['label' => ''])
 
+		// Products
+		->addLayout('Products/Portfolio', ['label' => 'Kulturas'])
+		->addGroup('products', ['layout' => 'block', 'label' => 'Saraksts'])
+			//->addText('prod_category_name', ['label' => 'Product Group Category Name'])
+			//->addTextarea('prod_group_description', ['label' => 'Product Group Description', 'rows' => 3])
+			->addRepeater('product_items', ['layout' => 'table', 'label' => 'Agricultures'])
+				->addImage('product_image', ['return_format' => 'id', 'wrapper' => ['width' => 25], 'label' => 'Aattēls'])
+				->addSelect('select_field', [ 'label' => 'Fona krāsa','choices' => ['dzeltens','zals','zils'],'default_value' => ['dzeltens'],'wrapper' => ['width' => 25],'ui' => 1,'return_format' => 'value'])
+				->addGroup('product_description', ['layout' => 'block', 'label' => 'Kultūru Nosaukumi'])
+					->addText('product_caption', ['label' => 'Kultūras Nosaukums'])
+				// 	->addLink('product_link', ['label' => 'Product Link'])
+				// 	->addTextarea('product_short_description', ['label' => 'Product Short Description', 'rows' => 3])
+				// ->endGroup()
+				// ->addGroup('product_prices', ['layout' => 'block', 'label' => 'Prices', 'wrapper' => ['width' => 25]])
+				// 	->addNumber('product_price', ['label' => 'Price'])
+				// 	->addNumber('product_new_price', ['label' => 'New Price'])
+				->endGroup()
+			->endRepeater()
+		->endGroup()
+
 		// Related Posts
 		->addLayout('Related Posts Cards')
 		->addNumber('col_desk_related_posts', [
@@ -292,5 +312,6 @@ $builder
 
 	add_action('acf/init', function() use ($builder) {
 		acf_add_local_field_group( $builder->build() );
+		acf_update_setting('google_api_key', 'AIzaSyDgxqiCatkYH81cqSfRaDaMtTbw8yLpfuE');
 		//print_r($builder->build());
 	});
