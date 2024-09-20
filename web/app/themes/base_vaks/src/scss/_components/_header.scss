@@ -7,7 +7,7 @@ header {
 			&_top {
 				justify-content: flex-end;
 				padding: 20px 0;
-				width: 100%;
+				z-index: 1;
 				
 				& > * {
 					float: right;
@@ -21,10 +21,28 @@ header {
 			&_nav {
 				padding: 0 0 20px 0;
 
+				@include resp-max('s') {
+					position: absolute;
+					padding: 0;
+					width: 50%;
+					left: 20px;
+					top: 20px;
+				}
+					
+
 				.wp-block-site-logo {
+					padding-right: 15px;
+
+					@include resp-max('s') {
+						padding-right: 0;
+					}
 
 					img {
 						width: 74px !important;
+
+						@include resp-max('s') {
+							width: 100px;
+						}
 					}
 				}
 
@@ -45,6 +63,10 @@ header {
 						&:nth-child(4) {
 							flex: auto;
 
+							@include resp-max('xl') {
+								flex: unset;
+							}
+
 							a, span {
 								font-family: $body-font-extrabold !important;
 								text-transform: uppercase;
@@ -53,11 +75,22 @@ header {
 						}
 
 						&:nth-child(4) {
-							margin-right: 400px;
+							margin-right: 380px;
+
+							@include resp-max('xl') {
+								margin-right: 30px;
+							}
 						}
 					}
 				}
 			}
 		}
+	}
+}
+
+.wp-block-navigation__responsive-container {
+
+	@include resp-max('s') {
+		padding: 20px !important;
 	}
 }

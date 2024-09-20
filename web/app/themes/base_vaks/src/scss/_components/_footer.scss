@@ -10,6 +10,10 @@ footer {
 		&-logo {
 			padding: 100px 0 !important;
 
+			@include resp-max('s') {
+				padding: 10px 0 !important;
+			}
+
 			.wp-block-social-links {
 				justify-content: left !important;
 				margin: 15px 0 !important;
